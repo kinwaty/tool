@@ -1,0 +1,131 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+        <MenuTab path="/smartTool/Menu/File" id="File" label="文件"  index="0"></MenuTab>
+        <MenuTab path="/smartTool/Menu/View" id="View" label="视图" index="1"></MenuTab>
+		<MenuTab path="/smartTool/Menu/Option" id="Option"  label="选项" index="2"></MenuTab>
+        <MenuTab path="/smartTool/Menu/Special" id="SpecialTool"  label="领域工具" index="3"></MenuTab>
+        <MenuTab path="/smartTool/Menu/Generic" id="GenericTool"  label="通用工具" index="4"></MenuTab>
+	    <MenuTab path="/smartTool/Menu/Help" id="Help"  label="帮助" index="4"></MenuTab>
+        <MenuDropGroup path="/smartTool/Menu/File/Create" id="Create" label="新建" image="Resource\MainFrame\New.png" index="0">
+		    <MenuItem path="/smartTool/Menu/File/Create/Project" 
+                id="Project" 
+                label="工程" 
+                image="Resource\MainFrame\New.png"
+                index="0"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+            </MenuItem>
+            <MenuItem path="/smartTool/Menu/File/Create/File" 
+                id="/File" 
+                label="文件"  
+                image="Resource\MainFrame\New.png"
+                index="1"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+            </MenuItem>
+        </MenuDropGroup>
+        <MenuDropGroup path="/smartTool/Menu/File/Open" id="Open" label="打开" image="Resource\MainFrame\Open.png" index="1">
+            <MenuItem path="/smartTool/Menu/File/Open/Project" 
+                id="Project" 
+                label="工程" 
+                image="Resource\MainFrame\Open.png"
+                index="0"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+			</MenuItem>
+            <MenuItem path="/smartTool/Menu/File/Open//Folder" 
+                id="Folder" 
+                label="文件夹"  
+                image="Resource\MainFrame\Open.png"
+                index="1"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+            </MenuItem>
+        </MenuDropGroup>
+		<MenuItem path="/smartTool/Menu/Option/SerialPortSetting"
+                id="SerialPortSetting"
+                label="串口通信设置"
+                image=""
+                index="0"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.SerialPortSettingCommand">
+		</MenuItem>
+		<MenuItem path="/smartTool/Menu/Help/AboutUs"
+                id="AboutUs"
+                label="关于我们"
+                image=""
+                index="0"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+		</MenuItem>
+		<MenuItem path="/smartTool/Menu/Help/HelpFile"
+                id="HelpFile"
+                label="帮助文档"
+                image=""
+                index="1"
+                assemblyName="smartTool.MainFrame.dll"
+                className="smartTool.MainFrame.CreateCommand">
+		</MenuItem>
+    </Menu>
+
+    <DockBar>
+        <DockItem path="/smartTool/DockBar/Frame/Left"
+            id="Left"
+            label="工作站"
+            dockType="DockLeft"
+            dockWindowClass="smartTool.MainFrame.WorkTreeWindow"
+            assemblyName="smartTool.MainFrame.dll">
+        </DockItem>
+        <DockItem path="/smartTool/DockBar/Frame/Right"
+            id="Right"
+            label="属性"
+            dockType="DockRightAutoHide"
+            dockWindowClass="smartTool.MainFrame.WorkPropertyWindow"
+            assemblyName="smartTool.MainFrame.dll">
+        </DockItem>
+        <DockItem path="/smartTool/DockBar/Frame/Middle"
+            id="Middle"
+            label="united"
+            dockType="Document"
+            dockWindowClass="smartTool.MainFrame.WorkMidWindow"
+            assemblyName="smartTool.MainFrame.dll">
+        </DockItem>
+        <DockItem path="/smartTool/DockBar/Frame/Buttom"
+            id="Buttom"
+            label="输出窗口"
+            dockType="DockBottomAutoHide"
+            dockWindowClass="smartTool.MainFrame.OutputWindow"
+            assemblyName="smartTool.MainFrame.dll">
+        </DockItem>
+        </DockBar>
+
+    <ToolBar>
+    <!--displayStyle="Image"||"Text"||"ImageAndText"-->
+        <ToolBarButton path="/smartTool/ToolBar/ToolBarButton/Open"
+            id="open"
+            displayStyle="ImageAndText"
+            image="Resource\MainFrame\Open.png"
+            label="打开"
+            index="0"
+            assemblyName="smartTool.MainFrame.dll"
+            className="smartTool.MainFrame.CreateCommand">
+        </ToolBarButton>
+        <ToolBarSeparator path="/smartTool/ToolBar/ToolBarSeparator/1" id="1"></ToolBarSeparator>
+        <ToolBarButton path="/smartTool/ToolBar/ToolBarButton/New"
+            id="New"
+            displayStyle="ImageAndText"
+            image="Resource\MainFrame\Test.png"
+            label="新建"
+            index="1"
+            assemblyName="smartTool.MainFrame.dll"
+            className="smartTool.MainFrame.CreateCommand">
+        </ToolBarButton>
+        <ToolBarSeparator path="/smartTool/ToolBar/ToolBarSeparator/2" id="2"></ToolBarSeparator>
+    </ToolBar>
+
+    <StatusBar>
+        <StatusProgressBar path="/smartTool/StatusBar/ProgressBar/1" id="1" value="50" length="250"></StatusProgressBar>
+		<StatusLabel path="smartTool/StatusBar/Label/1" id="" label="12344"></StatusLabel>
+    </StatusBar>
+
+</Plugin>
