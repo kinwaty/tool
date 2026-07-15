@@ -1,0 +1,14 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+		<MenuDropGroup path="/ost/Menu/Generic/FilterTool" id="FilterTool" label="滤波器工具" image="" index="2">
+		    <MenuItem path="/ost/Menu/Generic/FilterTool/ButterWorth"
+                    id="ButterWorth"
+                    label="巴特沃斯滤波器"
+                    image=""
+                    index="0"
+                    assemblyName="ost.ButterWorth.dll"
+                    className="ost.ButterWorth.CreateCommand">
+		    </MenuItem>
+		</MenuDropGroup>
+    </Menu>
+</Plugin>

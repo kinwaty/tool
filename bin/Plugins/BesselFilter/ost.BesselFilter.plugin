@@ -1,0 +1,14 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+		<MenuDropGroup path="/ost/Menu/Generic/FilterTool" id="FilterTool" label="滤波器工具" image="" index="2">
+			<MenuItem path="/ost/Menu/Generic/FilterTool/Bessel"
+                    id="Bessel"
+                    label="贝塞尔滤波器"
+                    image=""
+                    index="0"
+                    assemblyName="ost.BesselFilter.dll"
+                    className="ost.BesselFilter.CreateCommand">
+			</MenuItem>
+		</MenuDropGroup>
+    </Menu>
+</Plugin>

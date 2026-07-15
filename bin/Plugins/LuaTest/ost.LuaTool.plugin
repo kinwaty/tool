@@ -1,0 +1,13 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+		<MenuItem path="/ost/Menu/Generic/LuaTest"
+                id="LuaTest"
+                label="LuaTest"
+                image=""
+                index="0"
+				appPath=".\Plugins\LuaTest\config.lua"
+                assemblyName="ost.LuaTool.dll"
+                className="ost.LuaTool.CreateCommand">
+		</MenuItem>
+    </Menu>
+</Plugin>

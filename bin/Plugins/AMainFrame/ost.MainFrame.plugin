@@ -1,0 +1,55 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+        <MenuTab path="/ost/Menu/File" id="File" label="文件"  index="0"></MenuTab>
+        <MenuTab path="/ost/Menu/View" id="View" label="视图" index="1"></MenuTab>
+		<MenuTab path="/ost/Menu/Option" id="Option"  label="选项" index="2"></MenuTab>
+        <MenuTab path="/ost/Menu/Special" id="SpecialTool"  label="领域工具" index="3"></MenuTab>
+        <MenuTab path="/ost/Menu/Generic" id="GenericTool"  label="通用工具" index="4"></MenuTab>
+	    <MenuTab path="/ost/Menu/Help" id="Help"  label="帮助" index="4"></MenuTab>
+        <MenuDropGroup path="/ost/Menu/File/Create" id="Create" label="新建" image="Resource\MainFrame\New.png" index="0">
+		    <MenuItem path="/ost/Menu/File/Create/Project" 
+                id="Project" 
+                label="工程" 
+                image="Resource\MainFrame\New.png"
+                index="0"
+                assemblyName="ost.MainFrame.dll"
+                className="ost.MainFrame.CreateCommand">
+            </MenuItem>
+            <MenuItem path="/ost/Menu/File/Create/File" 
+                id="/File" 
+                label="文件"  
+                image="Resource\MainFrame\New.png"
+                index="1"
+                assemblyName="ost.MainFrame.dll"
+                className="ost.MainFrame.CreateCommand">
+            </MenuItem>
+        </MenuDropGroup>
+        <MenuDropGroup path="/ost/Menu/File/Open" id="Open" label="打开" image="Resource\MainFrame\Open.png" index="1">
+            <MenuItem path="/ost/Menu/File/Open/Project" 
+                id="Project" 
+                label="工程" 
+                image="Resource\MainFrame\Open.png"
+                index="0"
+                assemblyName="ost.MainFrame.dll"
+                className="ost.MainFrame.CreateCommand">
+			</MenuItem>
+            <MenuItem path="/ost/Menu/File/Open//Folder" 
+                id="Folder" 
+                label="文件夹"  
+                image="Resource\MainFrame\Open.png"
+                index="1"
+                assemblyName="ost.MainFrame.dll"
+                className="ost.MainFrame.CreateCommand">
+            </MenuItem>
+        </MenuDropGroup>
+		<MenuItem path="/ost/Menu/Option/SerialPortSetting"
+                id="SerialPortSetting"
+                label="串口通信设置"
+                image=""
+                index="0"
+                assemblyName="ost.MainFrame.dll"
+                className="ost.MainFrame.SerialPortSettingCommand">
+		</MenuItem>
+    </Menu>
+
+</Plugin>

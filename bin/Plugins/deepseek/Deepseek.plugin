@@ -1,0 +1,15 @@
+﻿<Plugin  name="FrameConfig" author="kinwaty" version="1.0.0" description="" initialized="true">
+    <Menu>
+		<MenuDropGroup path="/ost/Menu/Generic/AiTool" id="AiTool" label="AI工具" image="" index="0">
+		    <MenuItem path="/ost/Menu/Generic/AiTool/Deepseek"
+                    id="DeepseekTool"
+                    label="Deepseek"
+                    image=""
+                    index="0"
+                    appPath="https://chat.deepseek.com/"  
+                    assemblyName="ost.WebBrowser.dll"
+                    className="ost.WebBrowser.CreateCommand">
+		    </MenuItem>
+		</MenuDropGroup>
+    </Menu>
+</Plugin>
